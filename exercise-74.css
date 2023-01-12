@@ -9,20 +9,30 @@ h1 {
   font-weight: bold;
 }
 
-div {
+.border-box {
   border: 5px solid black;
-  margin: 0px;
 }
 
-section {
+.flex-box {
   display: flex;
   align-items: stretch;
 }
 
-.cntnt {
+.box-size {
   height: 200px;
+  width: 40%;
 }
 
-.cntnt-box {
-  width: 100%;
+aside.box-size {
+  width: 20%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
 }
