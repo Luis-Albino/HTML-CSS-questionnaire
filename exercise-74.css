@@ -15,11 +15,11 @@ h1 {
 
 .flex-box {
   display: flex;
-  align-items: stretch;
+  height: 200px;
 }
 
 .box-size {
-  height: 200px;
+  height: 100%;
   width: 40%;
 }
 
