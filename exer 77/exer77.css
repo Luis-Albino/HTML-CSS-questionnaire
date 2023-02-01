@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  .button {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    background: lightblue;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    margin: 3px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    width: 400px;
+    height: auto;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  .container .nav-menu ul,
+  .container .submenu-container .nav-submenu ul {
+    list-style: none;
+  }
+  
+  .container .nav-menu {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .container .submenu-container {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .submenu-container .nav-submenu {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: none;
+  }
+  
+  .container .nav-menu ul,
+  .container .submenu-container .nav-submenu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  .container .nav-menu ul li label,
+  .container .nav-submenu ul li a {
+    display: block;
+    align-items: ceter;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .container .nav-menu ul li,
+  .container .submenu-container .nav-submenu ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px black;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  /*.container .nav-menu ul li,*/
+  .container .submenu-container .nav-submenu {
+    opacity: 30%;
+  }
+  
+  .container .submenu-container .nav-submenu ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /***** Submenu position *****/
+  .container .submenu-container .list-music {top: 0;}
+  .container .submenu-container .list-news {top: 40px;}
+  .container .submenu-container .list-sport {top: 80px;}
+  .container .submenu-container .list-science {top: 120px;}
+  .container .submenu-container .list-social {top: 160px;}
+  
+  /*****************************/
+  /**** Menu options: COLOR ****/
+  
+  .container .nav-menu .opt-music,
+  .container .submenu-container .list-music ul li {
+    background: blue;
+  }
+  
+  .container .nav-menu .opt-news,
+  .container .submenu-container .list-news ul li {
+    background: red;
+  }
+  
+  .container .nav-menu .opt-sport,
+  .container .submenu-container .list-sport ul li {
+    background: green;
+  }
+  
+  .container .nav-menu .opt-science,
+  .container .submenu-container .list-science ul li {
+    background: magenta;
+  }
+  
+  .container .nav-menu .opt-social,
+  .container .submenu-container .list-social ul li {
+    background: cyan;
+  }
+  
+  /*****************************/
+  /********** Actions **********/
+  
+  .container .nav-menu .opt-music:hover,
+  .container .nav-menu .opt-news:hover,
+  .container .nav-menu .opt-sport:hover,
+  .container .nav-menu .opt-science:hover,
+  .container .nav-menu .opt-social:hover {
+    opacity: 100%;
+  }
+  
+  .container #music:hover ~ .list-music,
+  .container #news:hover ~ .list-news,
+  .container #sport:hover ~ .list-sport,
+  .container #science:hover ~ .list-science,
+  .container #social:hover ~ .list-social {
+    display: block;
+  }
+  
+  .container #music:checked ~ .list-music,
+  .container #news:checked ~ .list-news,
+  .container #sport:checked ~ .list-sport,
+  .container #science:checked ~ .list-science,
+  .container #social:checked ~ .list-social {
+    display: block;
+    z-index: 1;
+    opacity: 100%;
+  }
+  
+  #top:checked ~ label .label-top,
+  #left:checked ~ label .label-left,
+  #right:checked ~ label .label-right {
+    background: orange;
+  }
+  
+  #top:checked ~ .container {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+  }
+  
+  #left:checked ~ .container {
+    left: 0;
+    top: 200px;
+  }
+  
+  #right:checked ~ .container {
+    flex-direction: row-reverse;
+    left: 100%;
+    top: 200px;
+    transform: translate(-100%,0);
+  }
