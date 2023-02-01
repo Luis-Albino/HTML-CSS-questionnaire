@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  width: 500px;
+  height: 100%;
+  border: 2px solid black;
+  position: relative;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%,0);
+  overflow: hidden;
+}
+
+.container .element-box {
+  width: 50%;
+  height: auto;
+  background: lightgreen;
+  border: 15px solid orange;
+  padding: 15px;
+}
+
+.container .element-box .element {
+  display: flex;
+  justify-content: center;
+  background: yellow;
+}
+
+.container .element-box .element h3{
+  position: absolute;
+  font-size: 13px;
+}
+
+.container .element-box .element .padding{
+  top: -0%;
+}
+
+.container .element-box .element .border{
+  top: -11%;
+}
