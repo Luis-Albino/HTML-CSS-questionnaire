@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  outline: 2px solid black;
+  width: 666px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container header,
+.container article,
+.container aside,
+.container footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.container section h2 {
+  position: relative;
+  top:-30%;
+}
+
+.container header,
+.container footer {
+  align-items: center;
+  height: 20%;
+}
+
+.container section {
+  display: flex;
+  height: 60%;
+}
+
+.container article {
+  width: 42.5%;
+}
+
+.container aside {
+  width: 15%;
+}
