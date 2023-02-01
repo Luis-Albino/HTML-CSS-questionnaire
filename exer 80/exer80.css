@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container,
+  .container div {
+    border: 2px solid black;
+    display: flex;
+  }
+  
+  .container div {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    width: 100%;
+  }
