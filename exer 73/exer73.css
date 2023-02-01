@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: hsl(0,0%,15%);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%,0);
+  border: 3px solid rgb(130, 110, 10);
+  box-shadow: 20px 20px 5px black;
+  border-radius: 10px;
+  background: rgb(139, 129, 17);
+  width: 510px;
+  height: 310px;
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel label {
+  font-size: 70px;
+  z-index: 1;
+  display: none;
+  position: relative;
+  color: rgb(130, 110, 10);
+}
+
+.carousel span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.carousel figure img,
+.carousel figure figcaption {
+  position: absolute;
+}
+
+.carousel figure figcaption {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-family: Courier;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 0%;
+}
+
+.fig-box {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 3px solid rgb(130, 110, 10);
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  opacity: 0;
+}
+
+.left {
+  left: -40%;
+  top: 0%;
+}
+
+.right {
+  left: 40%;
+  top: 0%;
+}
+
+#chck-img-1:checked ~ .lft-1,
+#chck-img-1:checked ~ .rght-1,
+#chck-img-2:checked ~ .lft-2,
+#chck-img-2:checked ~ .rght-2,
+#chck-img-3:checked ~ .lft-3,
+#chck-img-3:checked ~ .rght-3 {
+  display: inline;
+}
+
+#chck-img-1:checked ~ .image-1,
+#chck-img-2:checked ~ .image-2,
+#chck-img-3:checked ~ .image-3 {
+  opacity: 1;
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+@keyframes anim {
+  from {filter:blur(10px);}
+  to {filter:blur(0px%);}
+}
