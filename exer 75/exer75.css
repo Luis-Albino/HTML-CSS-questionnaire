@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background: rgb(180, 171, 96);
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman';
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container span:hover {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgb(245, 222, 13);;
+}
