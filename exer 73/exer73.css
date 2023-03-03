@@ -96,5 +96,5 @@ body {
 
 @keyframes anim {
   from {filter:blur(10px);}
-  to {filter:blur(0px%);}
+  to {filter:blur(0px);}
 }
