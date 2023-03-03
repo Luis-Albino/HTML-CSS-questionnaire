@@ -60,7 +60,7 @@
     height: 100%;
   }
   
-  
+
   
   .container .nav-menu ul li label,
   .container .nav-submenu ul li a {
@@ -79,7 +79,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    margin: 3px;
+    margin: 0px;
     border-radius: 10px;
     box-shadow: 3px 3px 2px black;
     color: white;
@@ -183,3 +183,30 @@
     top: 200px;
     transform: translate(-100%,0);
   }
+
+
+/************/
+
+  #top:checked ~ .container {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #top:checked ~ .container .nav-menu {
+    height: 40px;
+    width: 500px;
+  }
+
+  #top:checked ~ .container .nav-menu ul {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+
+  /***** on -checked top submenu position *****/
+  #top:checked ~ .container .submenu-container .list-music {top: 40px; left: 0px;}
+  #top:checked ~ .container .submenu-container .list-news {top: 40px; left: 100px;}
+  #top:checked ~ .container .submenu-container .list-sport {top: 40px; left: 200px;}
+  #top:checked ~ .container .submenu-container .list-science {top: 40px; left: 300px;}
+  #top:checked ~ .container .submenu-container .list-social {top: 40px; left: 400px;}
