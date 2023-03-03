@@ -3,24 +3,28 @@
 }
 
 .container {
-    display: flex;
-    background: rgb(180, 171, 96);
-    border-radius: 5px;
-    width: 120px;
-    height: 35px;
-    text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
-    justify-content: center;
-    align-items: center;
-    font-family: 'Times New Roman';
-    color: aliceblue;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px black;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  background: rgb(180, 171, 96);
+  border-radius: 5px;
 }
 
-.container span:hover {
-    font-size: 30px;
-    text-shadow: 2px 2px 4px rgb(245, 222, 13);;
+span {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman';
+  color: aliceblue;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px black;
+}
+
+span:hover {
+  font-size: 100px;
 }
