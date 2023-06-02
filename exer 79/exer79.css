@@ -8,14 +8,16 @@
   
   .container {
     display: flex; 
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 50%;
-    top: 50px;
-    transform: translate(-50%,0);
-    outline: 2px solid rgb(130, 110, 10);
+    /* left: 50%; */
+    /* top: 50px; */
+    /* transform: translate(-50%,0); */
+    /* outline: 2px solid rgb(130, 110, 10); */
     box-shadow: 20px 20px 5px black;
+    margin-top: -6  px;
+    margin-left: -8px;
   }
   
   .container input {
@@ -66,6 +68,11 @@
   
   .album-grid .right {
     left: 95%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
   
   #chck-albm-1:checked ~ .albm-1,
